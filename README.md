@@ -1,23 +1,26 @@
 ## GK5NPFO: Tongfang - AMD iGPU and Nvidia dGPU
 
 https://linuxx.info/installing-nvidia-driver-in-debian-10/
+
 https://wiki.debian.org/NVIDIA%20Optimus
 
 ---
 
 **Add contrib non-free**
 
+```bash
 sudo apt -y install nvidia-detect
 sudo apt -y install linux-headers-$(uname-r|sed 's/[^-]_-[^-]_-//')
 sudo apt -y install nvidia-driver nvidia-xconfig
 sudo nvidia-xconfig
+```
 
 ---
 
 **Config files**
 
 <details>
-  <summary>${HOME}/.xsessionrc</summary>
+  <summary><strong>${HOME}/.xsessionrc</strong></summary>
 
 ```
 xrandr --setprovideroutputsource modesetting NVIDIA-0
@@ -28,7 +31,7 @@ xrandr --dpi 96
 </details>
 
 <details>
-  <summary>/etc/X11/xorg.conf</summary>
+  <summary><strong>/etc/X11/xorg.conf</strong></summary>
 
 ```config
 Section "ServerLayout"
@@ -76,7 +79,7 @@ EndSection
 </details>
 
 <details>
-  <summary>/usr/share/gdm/greeter/autostart/optimus.desktop</summary>
+  <summary><strong>/usr/share/gdm/greeter/autostart/optimus.desktop</strong></summary>
 
 ```config
 [Desktop Entry]
