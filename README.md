@@ -1,12 +1,14 @@
 ## GK5NPFO: Tongfang - AMD iGPU and Nvidia dGPU
 
+https://wiki.debian.org/NVIDIA%20Optimus?action=show&redirect=NvidiaGraphicsDrivers%2FOptimus
+
 https://linuxx.info/installing-nvidia-driver-in-debian-10/
 
 https://wiki.debian.org/NVIDIA%20Optimus
 
 ---
 
-**Add contrib non-free**
+**From contrib non-free**
 
 ```bash
 sudo apt -y install nvidia-detect
