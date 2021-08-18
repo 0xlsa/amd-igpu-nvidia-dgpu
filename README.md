@@ -12,7 +12,7 @@ https://wiki.debian.org/NVIDIA%20Optimus
 
 ```bash
 sudo apt -y install nvidia-detect
-sudo apt -y install linux-headers-$(uname-r|sed 's/[^-]_-[^-]_-//')
+sudo apt -y install linux-headers-$(uname -r|sed 's/[^-]_-[^-]_-//')
 sudo apt -y install nvidia-driver nvidia-xconfig
 sudo nvidia-xconfig
 ```
